@@ -2,7 +2,7 @@
 title: Печатаем
 description: Различные хитрости и настройки печати сложными пластиками
 published: false
-date: 2023-03-10T09:32:40.264Z
+date: 2023-03-10T09:32:52.887Z
 tags: печать, настройка, профиль печати
 editor: ckeditor
 dateCreated: 2023-03-10T08:40:39.783Z
@@ -30,7 +30,7 @@ dateCreated: 2023-03-10T08:40:39.783Z
 <p>&nbsp;</p>
 <p>Для изменения z-offset в зависимости от типа используемой пластины, нужно вставить в стартовый g-code следующий раздел:</p>
 <p>&nbsp;</p>
-<pre><code class="language-typescript">;===== Z-Offset correction for Engineering Plate, High Temp Plate and Textured PEI Plate ===============
+<pre><code class="language-cs">;===== Z-Offset correction for Engineering Plate, High Temp Plate and Textured PEI Plate ===============
 ;curr_bed_type={curr_bed_type}
 {if curr_bed_type=="Engineering Plate"}  
      G29.1 Z0.03  ;raise 0.03mm for Engineering Plate
