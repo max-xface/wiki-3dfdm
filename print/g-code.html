@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-10T10:26:32.507Z
+date: 2023-03-10T10:43:28.514Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -22,8 +22,7 @@ dateCreated: 2023-03-10T10:26:32.507Z
      G29.1 Z{-0.05}  ;squish 0.05mm for Textured PEI Plate
 {endif}</code></pre>
 <p>&nbsp;</p>
-<p>Собственно, из кода видно, что зазор для Engineering Plate увеличивается на 0,03мм, для &nbsp;</p>
-<p>High Temp Plate увеличивается на 0,02мм, и для Textured PEI Plate уменьшается на 0,05мм.</p>
+<p>Собственно, из кода видно, что зазор для Engineering Plate увеличивается на 0,03мм, для High Temp Plate увеличивается на 0,02мм, и для Textured PEI Plate уменьшается на 0,05мм.</p>
 <p>Величина коррекции подобрана экспериментальным путём, и для каждого конкретного принтера скорее всего будет отличаться.</p>
 <p>Я вставил этот кусок перед разделом "nozzle load line", но, возможно, методологически более верным было бы вставить его после калибровки потока (то есть перед разделом "turn off light and wait extrude temperature").</p>
 <p>&nbsp;</p>
