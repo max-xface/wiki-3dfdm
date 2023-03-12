@@ -2,7 +2,7 @@
 title: Профили печати
 description: 
 published: true
-date: 2023-03-12T10:14:27.616Z
+date: 2023-03-12T10:14:29.456Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:25:36.043Z
