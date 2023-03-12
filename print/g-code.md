@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T10:06:47.634Z
+date: 2023-03-12T16:52:59.635Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -44,6 +44,7 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 
 -   по пути выше ищем и редактируем файл **fdm\_filament\_pla.json**
 -   в конце файла будет базовый g-code, в котором меняем скорость вентилятора на те, которые нужны:
+-   для generic профиля меняем в файле **Generic PLA @base.json**
 
 ```json
 "filament_start_gcode": [
@@ -58,3 +59,6 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 > Примечание: перед обновлением версии сохраните эти файлы на всякий случай, возможно, bambu studio их перепишет на дефолт
 
 > Примечание: финишный g-code находится в файле **fdm\_filament\_common.json,** применяется для всех системных профилей всех типов пластика
+
+
+
