@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T16:54:11.396Z
+date: 2023-03-12T16:57:08.332Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -59,6 +59,8 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 > Примечание: перед обновлением версии сохраните эти файлы на всякий случай, возможно, bambu studio их перепишет на дефолт
 
 > Примечание: финишный g-code находится в файле **fdm\_filament\_common.json,** применяется для всех системных профилей всех типов пластика
+
+> Примечание: например Generic PLA и Generic PLA Silk это разыне типы и каждому надо менять g-code в соответствующих файлах
 
 
 
