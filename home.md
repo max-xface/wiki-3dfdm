@@ -2,7 +2,7 @@
 title: Bambu Lab X1 Carbon Community
 description: 
 published: true
-date: 2023-03-12T10:16:16.341Z
+date: 2023-03-12T10:17:36.429Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-10T15:45:41.053Z
@@ -14,7 +14,7 @@ dateCreated: 2022-11-10T15:45:41.053Z
 
 **Официальная** [**wiki**](https://wiki.bambulab.com/en/x1/manual)
 
-**Официальный** **форум**
+**Официальный** [**форум**](https://forum.bambulab.com/)
 
 **Сабреддит** [**BambuLab**](https://www.reddit.com/r/BambuLab/)
 
