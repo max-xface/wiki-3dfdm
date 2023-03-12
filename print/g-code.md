@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T10:04:51.086Z
+date: 2023-03-12T10:06:47.634Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -12,7 +12,7 @@ dateCreated: 2023-03-10T10:26:32.507Z
 
 Для изменения z-offset в зависимости от типа используемой пластины, нужно вставить в стартовый g-code следующий раздел:
 
-```typescript
+```gcode
 ;===== Z-Offset correction for Engineering Plate, High Temp Plate and Textured PEI Plate ===============
 ;curr_bed_type={curr_bed_type}
 {if curr_bed_type=="Engineering Plate"}  
@@ -45,7 +45,7 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 -   по пути выше ищем и редактируем файл **fdm\_filament\_pla.json**
 -   в конце файла будет базовый g-code, в котором меняем скорость вентилятора на те, которые нужны:
 
-```typescript
+```json
 "filament_start_gcode": [
         "; filament start gcode\n{if  (bed_temperature[current_extruder] >45)||(bed_temperature_initial_layer
         [current_extruder] >45)}M106 P3 S125\n{elsif(bed_temperature[current_extruder] >35)||
