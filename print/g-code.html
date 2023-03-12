@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T07:54:14.485Z
+date: 2023-03-12T07:54:47.724Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -36,7 +36,7 @@ dateCreated: 2023-03-10T10:26:32.507Z
   <li>по пути выше ищем и редактируем файл <strong>fdm_filament_pla.json</strong></li>
   <li>в конце файла будет базовый g-code, в котором меняем скорость вентилятора на те, которые нужны:</li>
 </ul>
-<pre><code class="language-plaintext">"filament_start_gcode": [
+<pre><code class="language-typescript">"filament_start_gcode": [
         "; filament start gcode\n{if  (bed_temperature[current_extruder] &gt;45)||(bed_temperature_initial_layer
         [current_extruder] &gt;45)}M106 P3 S125\n{elsif(bed_temperature[current_extruder] &gt;35)||
         (bed_temperature_initial_layer[current_extruder] &gt;35)}M106 P3 S125\n{endif}"
