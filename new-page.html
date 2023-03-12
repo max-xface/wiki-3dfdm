@@ -1,0 +1,180 @@
+<!--
+title: G-Code
+description: 
+published: true
+date: 2023-03-12T09:35:13.590Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-03-12T09:35:13.590Z
+-->
+
+<h1>Аппаратное управление</h1>
+<h2>Коды управления лампой</h2>
+<p>&nbsp;</p>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <thead>
+      <tr>
+        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
+        <th style="padding:0.5em 0.5em 2px;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S0 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibration lasers, and calibration head white LEDs off/on</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S1 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibration Y axis IR 808nm laser (vertical) off/on</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S2 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibration X axis 405nm laser (horizontal) off/on</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S3 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Appears to be nothing at all, or I haven’t found what it is</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S4 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibration unit white LEDs off/on</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M960 S5 P0/1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Bambu Lab toolhead logo light off/on</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Example code:<br><code>M960 S5 P1 ; Switch Bambu Lab printhead logo light on</code></p>
+<h2>Коды управления вентилятором</h2>
+<p>&nbsp;</p>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <thead>
+      <tr>
+        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
+        <th style="padding:0.5em 0.5em 2px;"><strong>Description</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M106 P1 S0-255</td>
+        <td style="padding:3px 3px 3px 0.5em;">Part cooling fan off-full</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M106 P2 S0-255</td>
+        <td style="padding:3px 3px 3px 0.5em;">Aux fan off-full</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M106 P3 S0-255</td>
+        <td style="padding:3px 3px 3px 0.5em;">Chamber fan off-full</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>Example code:<br><code>M106 P3 S180 ; Switch chamber fan on at 70%</code></p>
+<h1>Разное</h1>
+<h2>Коды сообщений на дисплее</h2>
+<p>Эти команды вызывают отображение сообщений на ЖК-экране принтера и активируют отображение соответствующих сообщений в приложении/слайсере.</p>
+<figure class="table">
+  <table style="background-color:rgb(255, 255, 255);">
+    <thead>
+      <tr>
+        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
+        <th style="padding:0.5em 0.5em 2px;"><strong>LCD Message Displayed</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 0</td>
+        <td style="padding:3px 3px 3px 0.5em;"><i>(Clear screen of messages?)</i></td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 1</td>
+        <td style="padding:3px 3px 3px 0.5em;">Auto bed levelling</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 2</td>
+        <td style="padding:3px 3px 3px 0.5em;">Heatbed preheating</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 3</td>
+        <td style="padding:3px 3px 3px 0.5em;">Sweeping XY mech mode</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 4</td>
+        <td style="padding:3px 3px 3px 0.5em;">Changing filament</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 5</td>
+        <td style="padding:3px 3px 3px 0.5em;">M400 pause</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 6</td>
+        <td style="padding:3px 3px 3px 0.5em;">Paused due to filament runout</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 7</td>
+        <td style="padding:3px 3px 3px 0.5em;">Heating hotend</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 8</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibrating extrusion</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 9</td>
+        <td style="padding:3px 3px 3px 0.5em;">Scanning bed surface</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 10</td>
+        <td style="padding:3px 3px 3px 0.5em;">Inspecting first layer</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 11</td>
+        <td style="padding:3px 3px 3px 0.5em;">Identifying build plate type</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 12</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibrating Micro Lidar</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 13</td>
+        <td style="padding:3px 3px 3px 0.5em;">Homing toolhead</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 14</td>
+        <td style="padding:3px 3px 3px 0.5em;">Cleaning nozzle tip</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 15</td>
+        <td style="padding:3px 3px 3px 0.5em;">Checking extruder temperature</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 16</td>
+        <td style="padding:3px 3px 3px 0.5em;">Paused by the user</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 17</td>
+        <td style="padding:3px 3px 3px 0.5em;">Pause due to the falling off of the tool head’s front cover</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 18</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibrating the micro lidar</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 19</td>
+        <td style="padding:3px 3px 3px 0.5em;">Calibrating extruder flow</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 20</td>
+        <td style="padding:3px 3px 3px 0.5em;">Paused due to nozzle temperature malfunction</td>
+      </tr>
+      <tr>
+        <td style="padding:3px 3px 3px 0.5em;">M1002 gcode_claim_action : 21</td>
+        <td style="padding:3px 3px 3px 0.5em;">Paused due to heat bed temperature malfunction</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
