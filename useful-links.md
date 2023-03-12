@@ -2,7 +2,7 @@
 title: Полезные ресурсы
 description: 
 published: true
-date: 2023-03-12T10:12:19.406Z
+date: 2023-03-12T10:12:22.352Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-09T21:47:56.741Z
