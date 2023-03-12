@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T08:03:05.720Z
+date: 2023-03-12T09:48:05.846Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -12,7 +12,7 @@ dateCreated: 2023-03-10T10:26:32.507Z
 <p>&nbsp;</p>
 <p>Для изменения z-offset в зависимости от типа используемой пластины, нужно вставить в стартовый g-code следующий раздел:</p>
 <p>&nbsp;</p>
-<pre><code class="language-c">;===== Z-Offset correction for Engineering Plate, High Temp Plate and Textured PEI Plate ===============
+<pre><code class="language-typescript">;===== Z-Offset correction for Engineering Plate, High Temp Plate and Textured PEI Plate ===============
 ;curr_bed_type={curr_bed_type}
 {if curr_bed_type=="Engineering Plate"}  
      G29.1 Z0.03  ;raise 0.03mm for Engineering Plate
