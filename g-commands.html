@@ -2,7 +2,7 @@
 title: G-Code Команды управления
 description: 
 published: true
-date: 2023-03-12T09:43:16.613Z
+date: 2023-03-12T09:47:19.377Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-03-12T09:35:13.590Z
@@ -15,39 +15,39 @@ dateCreated: 2023-03-12T09:35:13.590Z
   <table style="background-color:rgb(255, 255, 255);">
     <thead>
       <tr>
-        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
-        <th style="padding:0.5em 0.5em 2px;"><strong>Description</strong></th>
+        <th style="padding:0.5em 0.5em 2px;">Команда</th>
+        <th style="padding:0.5em 0.5em 2px;">Описание</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S0 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Calibration lasers, and calibration head white LEDs off/on</td>
+        <td style="padding:3px 3px 3px 0.5em;">Калибровочные лазеры и калибровочная головка, белые светодиоды выкл./вкл.</td>
       </tr>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S1 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Calibration Y axis IR 808nm laser (vertical) off/on</td>
+        <td style="padding:3px 3px 3px 0.5em;">Калибровка по оси Y ИК-лазер 808 нм (вертикальный) выкл./вкл.</td>
       </tr>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S2 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Calibration X axis 405nm laser (horizontal) off/on</td>
+        <td style="padding:3px 3px 3px 0.5em;">Калибровка Ось X Лазер 405 нм (горизонтальный) выкл./вкл.</td>
       </tr>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S3 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Appears to be nothing at all, or I haven’t found what it is</td>
+        <td style="padding:3px 3px 3px 0.5em;">Вроде бы ничего, или я не нашел что это такое</td>
       </tr>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S4 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Calibration unit white LEDs off/on</td>
+        <td style="padding:3px 3px 3px 0.5em;">Калибровочный блок белые светодиоды выкл./вкл.</td>
       </tr>
       <tr>
         <td style="padding:3px 3px 3px 0.5em;">M960 S5 P0/1</td>
-        <td style="padding:3px 3px 3px 0.5em;">Bambu Lab toolhead logo light off/on</td>
+        <td style="padding:3px 3px 3px 0.5em;">Выключение/включение подсветки логотипа Bambu Lab</td>
       </tr>
     </tbody>
   </table>
 </figure>
-<p><strong>Example code:</strong></p>
+<p><strong>Пример:</strong></p>
 <pre><code class="language-typescript">M960 S5 P1 ;Включение подсветки логотипа печатающей головки Bambu Lab</code></pre>
 <h2>Коды управления вентилятором</h2>
 <p>&nbsp;</p>
@@ -55,8 +55,8 @@ dateCreated: 2023-03-12T09:35:13.590Z
   <table style="background-color:rgb(255, 255, 255);">
     <thead>
       <tr>
-        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
-        <th style="padding:0.5em 0.5em 2px;"><strong>Description</strong></th>
+        <th style="padding:0.5em 0.5em 2px;">Команда</th>
+        <th style="padding:0.5em 0.5em 2px;">Описание</th>
       </tr>
     </thead>
     <tbody>
@@ -75,16 +75,17 @@ dateCreated: 2023-03-12T09:35:13.590Z
     </tbody>
   </table>
 </figure>
-<p>Example code:<br><code>M106 P3 S180 ; Switch chamber fan on at 70%</code></p>
+<p><strong>Пример:</strong></p>
+<pre><code class="language-typescript">M106 P3 S180 ;Включить вентилятор камеры на 70%</code></pre>
 <h1>Разное</h1>
-<h2>Коды сообщений на дисплее</h2>
-<p>Эти команды вызывают отображение сообщений на ЖК-экране принтера и активируют отображение соответствующих сообщений в приложении/слайсере.</p>
+<h2>Коды сообщений на LCD-дисплее</h2>
+<p>Эти команды вызывают отображение сообщений на LCD-экране принтера и активируют отображение соответствующих сообщений в приложении/слайсере.</p>
 <figure class="table">
   <table style="background-color:rgb(255, 255, 255);">
     <thead>
       <tr>
-        <th style="padding:0.5em 0.5em 2px;"><strong>Code</strong></th>
-        <th style="padding:0.5em 0.5em 2px;"><strong>LCD Message Displayed</strong></th>
+        <th style="padding:0.5em 0.5em 2px;">Команда</th>
+        <th style="padding:0.5em 0.5em 2px;">Сообщение</th>
       </tr>
     </thead>
     <tbody>
