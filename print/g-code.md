@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T16:59:34.171Z
+date: 2023-03-12T23:05:52.184Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -43,7 +43,7 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 Чтобы поменять стартовый g-code для всех дефолтных профилей одного типа(например для печати **Bambu PLA XXXXX** задать chamber кулеру скорость 50%) делаем следующее:
 
 -   по пути выше ищем и редактируем файл **fdm\_filament\_pla.json**
--   в конце файла будет базовый g-code, в котором меняем скорость вентилятора на те, которые нужны:
+-   в конце файла будет базовый g-code, в котором меняем скорость вентилятора на ту, которая нужна:
 -   для generic профиля меняем в файле **Generic PLA @base.json**
 
 ```json
@@ -56,11 +56,28 @@ c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\f
 
 **M106 P3 S125** - в данном случае **S125** это 50% от скорости(диаппазон значений **S0 - S255**).
 
-> Примечание: перед обновлением версии сохраните эти файлы на всякий случай, возможно, bambu studio их перепишет на дефолт
+> Примечание 1: перед обновлением версии сохраните эти файлы на всякий случай, возможно, bambu studio их перепишет на дефолт
 
-> Примечание: финишный g-code находится в файле **fdm\_filament\_common.json,** применяется для всех системных профилей всех типов пластика
+> Примечание 2: финишный g-code находится в файле **fdm\_filament\_common.json,** применяется для всех системных профилей всех типов пластика
 
-> Примечание: например, Generic PLA и Generic PLA Silk это разыне типы и каждому надо менять g-code в соответствующих файлах
+> Примечание 3: например, Generic PLA и Generic PLA Silk это разыне типы и каждому надо менять g-code в соответствующих файлах
 
+#### Список файлов, где задана скорость chamber-вентилятора в стартовом g-code:
+**BBL X1C:**
+fdm_filament_pet.json
+fdm_filament_pla.json
+fdm_filament_pva.json
+fdm_filament_tpu.json
+Generic PETG @base.json
+Generic PLA @0.2 nozzle.json
+Generic PLA @base.json
+Generic PLA Silk @base.json
+Generic PLA-CF @base.json
+Generic TPU.json
+PolyLite PLA @BBL X1C.json
+PolyTerra PLA @BBL X1C.json
 
-
+**BBL P1P:**
+Generic PLA @BBL P1P 0.2 nozzle.json
+Generic TPU @BBL P1P.json
+> Примечание: не ясно почему для P1P задан этот параметр, возможно не досмотрели разработчики)
