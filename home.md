@@ -2,7 +2,7 @@
 title: Bambu Lab X1 Carbon Community
 description: 
 published: true
-date: 2023-03-12T10:16:14.525Z
+date: 2023-03-12T10:16:16.341Z
 tags: 
 editor: markdown
 dateCreated: 2022-11-10T15:45:41.053Z
