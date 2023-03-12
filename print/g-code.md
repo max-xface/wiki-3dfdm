@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T23:16:52.751Z
+date: 2023-03-12T23:18:31.513Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -82,4 +82,4 @@ PolyTerra PLA @BBL X1C.json
 **BBL P1P:**
 Generic PLA @BBL P1P 0.2 nozzle.json
 Generic TPU @BBL P1P.json
-> Примечание: не ясно почему для P1P задан этот параметр, возможно не досмотрели разработчики)
+> Примечание: не ясно почему для P1P задан этот параметр, возможно не досмотрели разработчики
