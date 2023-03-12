@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-12T23:19:56.930Z
+date: 2023-03-12T23:21:14.399Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -36,7 +36,7 @@ dateCreated: 2023-03-10T10:26:32.507Z
 
 Базовые настройки профилей лежат по пути(обязательно нужен первый запуск студии после установки):
 
-```plaintext
+```
 c:\Users\<имя юзера в windows>\AppData\Roaming\BambuStudio\system\BBL\filament\
 ```
 
