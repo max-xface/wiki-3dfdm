@@ -2,7 +2,7 @@
 title: Custom G-Code
 description: 
 published: true
-date: 2023-03-15T09:15:35.242Z
+date: 2023-03-15T09:16:28.138Z
 tags: 
 editor: markdown
 dateCreated: 2023-03-10T10:26:32.507Z
@@ -84,5 +84,15 @@ Generic PLA @BBL P1P 0.2 nozzle.json
 Generic TPU @BBL P1P.json
 > **Примечание:** не ясно, почему для P1P задан этот параметр, возможно не досмотрели разработчики
 
-[^1]: A string of syntactic words.
-[^2]: A useful example sentence.
+# Tabs {.tabset}
+## First Tab
+
+Any content here will go into the first tab...
+
+## Second Tab
+
+Any content here will go into the second tab...
+
+## Third Tab
+
+Any content here will go into the third tab...
